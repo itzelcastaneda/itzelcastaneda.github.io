@@ -5,6 +5,7 @@ repository: itzelcastaneda/itzelcastaneda.github.io
 url: "https://itzelcastaneda.github.io"
 baseurl: ""
 markdown: kramdown
+theme: null
 remote_theme: sunbliss/photorama
 plugins:
   - jekyll-remote-theme
