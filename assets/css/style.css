@@ -1,0 +1,64 @@
+/* Gaudí-esque custom theme for Itzel Castañeda */
+/* Fonts: Josefin Sans (headings), Lora (body) */
+
+:root{
+  --terracotta: #D96C30;
+  --sky: #76B7E0;
+  --sand: #F4E2C1;
+  --teal: #2E6F7E;
+  --white: #FFFFFF;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Lora', serif;
+  color: var(--teal);
+  background: linear-gradient(180deg, var(--sand) 0%, #ffffff 60%);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{ color: var(--teal); text-decoration:none; border-bottom:1px dashed rgba(46,111,126,0.12) }
+a:hover{ color: var(--terracotta); text-decoration:none; }
+
+.site-header{
+  background: linear-gradient(90deg, rgba(118,183,224,0.12), rgba(217,108,48,0.06));
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 6px 18px rgba(46,111,126,0.06);
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto; }
+.brand{ font-family:'Josefin Sans', sans-serif; font-weight:700; font-size:1.3rem; color:var(--terracotta) }
+.nav-links{ list-style:none; margin:0; padding:0; display:flex; gap:1rem; }
+.nav-links a{ font-weight:600; color:var(--teal) }
+
+.hero{
+  max-width:1100px; margin:2.2rem auto; padding:2.2rem; border-radius:20px; background:rgba(255,255,255,0.7);
+  box-shadow: 0 10px 30px rgba(46,111,126,0.06);
+  clip-path: ellipse(95% 100% at 50% 0%);
+}
+.hero-inner h1{ font-family:'Josefin Sans', sans-serif; font-size:2.6rem; margin:0 0 0.3rem; color:var(--terracotta) }
+.tagline{ font-style:italic; color: #475e63; margin:0.4rem 0 0.8rem }
+.lead{ margin-bottom:1rem; }
+
+.cta{ display:inline-block; padding:0.6rem 1rem; border-radius: 16px; background: linear-gradient(90deg, var(--sky), var(--terracotta)); color: white; font-weight:700 }
+
+.posts-preview{ max-width:1100px; margin:1.8rem auto; padding:0 1rem; }
+.post-list{ list-style:none; padding:0; margin:0; display:grid; gap:0.6rem; }
+.post-item{ padding:0.7rem; border-radius:10px; background: rgba(255,255,255,0.9); display:flex; justify-content:space-between; align-items:center; box-shadow: 0 4px 12px rgba(46,111,126,0.04) }
+.post-item a{ font-weight:700 }
+
+.site-content{ padding-bottom:4rem }
+
+.site-footer{ margin-top:3rem; padding:1.6rem 1rem; background:#fff; border-top:6px solid var(--terracotta) }
+.footer-inner{ max-width:1100px; margin:0 auto; text-align:center; color:var(--teal) }
+
+.mosaic-svg{ width:100%; height:120px; display:block; margin-top:-24px; }
+
+@media (max-width:700px){
+  .hero-inner h1{ font-size:1.8rem }
+  .nav-inner{ padding:0 0.5rem }
+  .nav-links{ display:none }
+}
