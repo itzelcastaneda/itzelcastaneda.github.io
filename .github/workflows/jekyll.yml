@@ -30,10 +30,13 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Build site
+      - name: Build site with Jekyll
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+
+      - name: Check build contents
+        run: ls -R _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -48,6 +51,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
