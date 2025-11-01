@@ -1,7 +1,13 @@
+/* ---------------------------
+   Base & Typography
+----------------------------*/
 body {
   font-family: 'Lora', serif;
-  background: linear-gradient(to bottom, #fdf6e3, #4dc0b5);
-  color: #2e6f7e;
+  background-color: #B85C38; /* Terracotta base */
+  background-image: url('/assets/images/talavera-pattern.svg'); /* Talavera tiles */
+  background-repeat: repeat;
+  background-size: 80px 80px;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -10,7 +16,7 @@ body {
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3rem;
-  color: #d96c30;
+  color: #FFD700; /* Golden contrast for header */
   text-align: center;
   margin-top: 1rem;
   transition: transform 0.3s ease;
@@ -22,22 +28,42 @@ h1:hover {
 
 header p {
   text-align: center;
-  color: #fcd34d;
+  color: #FDE68A; /* pale gold */
   font-size: 1.2rem;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #4dc0b5;
+  background: #4DC0B5; /* soft teal footer */
   color: white;
 }
 
+/* ---------------------------
+   Papel Picado Animation
+----------------------------*/
+.papel-picado {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  animation: float 5s infinite ease-in-out;
+  border-radius: 2px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* ---------------------------
+   Magic Cursor Particle
+----------------------------*/
 .cursor-particle {
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #fcd34d;
+  background: #FCD34D; /* golden sparkles */
   border-radius: 50%;
   pointer-events: none;
   animation: floatUp 1s ease-out forwards;
