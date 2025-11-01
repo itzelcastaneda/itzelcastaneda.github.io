@@ -1,12 +1,7 @@
 title: "Itzel Castañeda"
 email: "ic28@rice.edu"
-description: "I’m a Master of Computer Science student at Rice University, exploring how people and algorithms shape each other through data, design, and ethics."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://itzelcastaneda.github.io" # update if different
-theme: minima
-author:
-  name: "Itzel Castañeda"
 tagline: "Caminante, no hay camino, se hace camino al andar."
-plugins: [jekyll-seo-tag, jekyll-feed]
 markdown: kramdown
-permalink: /:categories/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
