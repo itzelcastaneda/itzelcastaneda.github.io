@@ -1,1 +1,0 @@
-# Itzel Castañeda — Jekyll Site 
