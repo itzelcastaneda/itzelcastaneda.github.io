@@ -1,3 +1,4 @@
+// Magical cursor particles
 document.addEventListener("mousemove", function(e){
   const particle = document.createElement("div");
   particle.className = "cursor-particle";
