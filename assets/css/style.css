@@ -3,10 +3,6 @@
 ----------------------------*/
 body {
   background-color: #B85C38; /* terracotta */
-  background-image: 
-    repeating-linear-gradient(45deg, #FFD700 0 10px, #4DC0B5 10px 20px),
-    repeating-linear-gradient(-45deg, #FDE68A 0 10px, #D96C30 10px 20px);
-  background-size: 40px 40px;
 }
 
 h1 {
