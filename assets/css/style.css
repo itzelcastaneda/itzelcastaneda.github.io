@@ -62,3 +62,17 @@ a:hover{ color: var(--terracotta); text-decoration:none; }
   .nav-inner{ padding:0 0.5rem }
   .nav-links{ display:none }
 }
+.cursor-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fcd34d;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-20px) scale(0); }
+}
